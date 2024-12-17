@@ -21,6 +21,33 @@ export default function Home() {
           </button>
         </div>
       </div>
+      {/* Why You Should Choose Us Section */}
+      <section className="container mx-auto px-6 py-12 bg-yellow-50">
+        <h2 className="text-3xl font-bold mb-10">Why You Should Choose Us</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <Image
+              src="/svg/oil-bottle.svg"
+              width={500}
+              height={300}
+              className="rounded-lg shadow-md"
+              alt="Bottle with lime"
+            />
+          </div>
+          <div className="grid grid-cols-1 gap-6">
+            <div className="flex items-start space-x-4">
+              <div className="text-yellow-500">
+                {/* Icon here */}
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">Fast Pick Up</h3>
+                <p className="text-gray-600">We can accommodate same-day service if we're available.</p>
+              </div>
+            </div>
+            {/* Repeat for other features */}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
