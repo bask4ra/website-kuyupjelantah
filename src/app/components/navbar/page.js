@@ -8,10 +8,10 @@ export default function Navbar() {
                 <li className="text-2xl font-medium">Home</li>
                 <li className="text-2xl font-medium">How it works</li>
                 <li className="text-2xl font-medium">Pricing</li>
-                <li className="px-5 border py-2 rounded-full bg-orange">
-                    <span className="font-semibold text-base text-white">Schedule Now</span>
+                <li className="px-5 border py-2 rounded-full bg-orange hover:bg-yellow-600">
+                    <button className="font-semibold text-base text-white">Schedule Now</button>
                 </li>
             </div>
         </ul>
     )
-}
+} 
