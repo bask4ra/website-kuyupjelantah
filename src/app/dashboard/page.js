@@ -3,12 +3,12 @@ import Image from "next/image";
 
 export default function Dashboard() {
   return (
-    <div className="min-h-screen flex bg-gray-100 font-sans">
+    <div className="h-screen flex bg-white-100 font-sans">
       {/* Sidebar */}
       <SidePanel />
 
       {/* Main Content */}
-      <main className="flex-1 p-6">
+      <main className="flex-1 flex-col overflow-y-auto p-6">
         <header className="flex items-center justify-between mb-6">
           <h1 className="text-2xl font-bold text-gray-800">Dashboard</h1>
           {/* Notification Logo aligned to the right */}
