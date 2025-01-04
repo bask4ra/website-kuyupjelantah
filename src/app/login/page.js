@@ -67,14 +67,14 @@ export default function Login() {
             </div>
             <button
               type="submit"
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-lg font-medium"
+              className="w-full bg-[#FC9910]  text-white py-2 rounded-2xl font-medium"
             >
               Sign In
             </button>
-            <p className="text-center text-gray-500">or</p>
+            <p className="text-center text-gray-500 ">or</p>
             <button
               type="button"
-              className="w-full border flex items-center justify-center py-2 rounded-lg text-gray-600 hover:bg-gray-100"
+              className="w-full border flex items-center justify-center py-2 rounded-2xl text-gray-600 hover:bg-gray-100"
             >
               <img
                 src="/svg/google.svg"

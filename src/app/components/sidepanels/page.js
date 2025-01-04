@@ -66,7 +66,7 @@ export default function SidePanel() {
           />
           Royalty Reward
         </a>
-        <a href="#" className="flex items-center p-2 font-bold hover:bg-gray-100 rounded">
+        <a href="/history" className="flex items-center p-2 font-bold hover:bg-gray-100 rounded">
           <Image
             src="/svg/history-logo.svg"
             alt="History Logo"
