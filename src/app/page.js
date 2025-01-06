@@ -11,7 +11,7 @@ export default function Home() {
         <div className="absolute top-[55%] left-[calc(15%-48px)] transform -translate-y-1/2"> 
           <h1 className="text-6xl font-bold text-yellow-500 mb-5">From Your Kitchen Waste Oil</h1>
           <h2 className="text-6xl font-semibold text-white mb-5">to<a className="text-yellow-500"> Cash</a> in One Call Away</h2>
-          <button className="bg-yellow-600 hover:bg-yellow-600 text-white font-medium py-2 px-3 rounded-full ">Get Started</button>
+          <a href="/login" className="bg-yellow-600 hover:bg-yellow-600 text-white font-medium py-2 px-3 rounded-full ">Get Started</a>
         </div>
       </section>
       <section className="container-sm ml-24 mr-24 mt-20 relative">
@@ -213,9 +213,9 @@ export default function Home() {
     </div>
     <div className="flex items-center -translate-x-[240px]">
       <p className="text-white font-semibold text-[32px]">or</p>
-      <button className="bg-[#FC9910] text-white px-6 py-2 rounded-3xl font-medium translate-x-[96px]">
+      <a href="/login" className="bg-[#FC9910] text-white px-6 py-2 rounded-3xl font-medium translate-x-[96px]">
         Get Started
-      </button>
+      </a>
     </div>
   </div>
 </section>
