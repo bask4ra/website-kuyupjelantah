@@ -3,27 +3,26 @@ import Image from "next/image";
 export default function SidePanel() {
   return (
     <aside className="w-64 bg-white border-r border-gray-200 p-4">
-      {/* Logo */}
-      <div className="flex items-center justify-start mb-6">
+      {/* Logo Section */}
+      <div className="flex items-center justify-between mb-6">
         <Image
-          src="/svg/navbar-image.svg" // Logo Kuyup Jelantah dari file SVG
+          src="/svg/navbar-image.svg" // Logo Kuyup Jelantah
           alt="Logo Kuyup Jelantah"
-          width={100} // Sesuaikan ukuran logo
+          width={100}
           height={100}
         />
         <Image
-          src="/svg/sidepanel-icon.svg" // Logo SidePanels
+          src="/svg/sidepanel-icon.svg" // Icon SidePanels
           alt="SidePanels Icon"
-          width={30} // Sesuaikan ukuran ikon SidePanels
+          width={30}
           height={30}
-          className="ml-14" // Menambahkan margin kiri
         />
       </div>
 
       {/* Profile Section */}
       <div className="flex items-center mb-8">
         <Image
-          src="/svg/profile-image.svg" // Ganti dengan path gambar profil Anda
+          src="/svg/profile-image.svg" // User Profile Image
           alt="User Profile"
           width={50}
           height={50}
@@ -36,7 +35,11 @@ export default function SidePanel() {
 
       {/* Navigation Menu */}
       <nav className="space-y-4">
-        <a href="#" className="flex items-center p-2 text-gray-700 font-bold bg-gray-100 rounded">
+        {/* Dashboard */}
+        <a
+          href="/dashboard"
+          className="flex items-center p-2 text-gray-700 font-bold hover:bg-gray-100 rounded"
+        >
           <Image
             src="/svg/home-logo.svg"
             alt="Dashboard Logo"
@@ -46,7 +49,12 @@ export default function SidePanel() {
           />
           Dashboard
         </a>
-        <a href="#" className="flex items-center p-2 font-bold hover:bg-gray-100 rounded">
+
+        {/* Schedule */}
+        <a
+          href="/schedule"
+          className="flex items-center p-2 font-bold hover:bg-gray-100 rounded"
+        >
           <Image
             src="/svg/schedule-logo.svg"
             alt="Schedule Logo"
@@ -56,7 +64,12 @@ export default function SidePanel() {
           />
           Schedule
         </a>
-        <a href="#" className="flex items-center p-2 font-bold hover:bg-gray-100 rounded">
+
+        {/* Royalty Reward */}
+        <a
+          href="/royalty-reward"
+          className="flex items-center p-2 font-bold hover:bg-gray-100 rounded"
+        >
           <Image
             src="/svg/loyalty-reward-logo.svg"
             alt="Royalty Reward Logo"
@@ -66,7 +79,11 @@ export default function SidePanel() {
           />
           Royalty Reward
         </a>
-        <a href="/history" className="flex items-center p-2 font-bold hover:bg-gray-100 rounded">
+        {/* History */}
+        <a
+          href="/history"
+          className="flex items-center p-2 font-bold hover:bg-gray-100 rounded"
+        >
           <Image
             src="/svg/history-logo.svg"
             alt="History Logo"
@@ -76,9 +93,15 @@ export default function SidePanel() {
           />
           History
         </a>
-        {/* Garis Pemisah */}
+
+        {/* Divider */}
         <hr className="border-t border-gray-300 my-4" />
-        <a href="#" className="flex items-center p-2 font-bold hover:bg-gray-100 rounded">
+
+        {/* Settings */}
+        <a
+          href="/settings"
+          className="flex items-center p-2 font-bold hover:bg-gray-100 rounded"
+        >
           <Image
             src="/svg/settings-logo.svg"
             alt="Settings Logo"
@@ -88,7 +111,12 @@ export default function SidePanel() {
           />
           Settings
         </a>
-        <a href="#" className="flex items-center p-2 font-bold hover:bg-gray-100 rounded">
+
+        {/* FAQs */}
+        <a
+          href="/faqs"
+          className="flex items-center p-2 font-bold hover:bg-gray-100 rounded"
+        >
           <Image
             src="/svg/faqs-logo.svg"
             alt="FAQs Logo"
@@ -98,7 +126,12 @@ export default function SidePanel() {
           />
           FAQs
         </a>
-        <a href="#" className="flex items-center p-2 font-bold hover:bg-gray-100 rounded text-red-500">
+
+        {/* Sign Out */}
+        <a
+          href="/login"
+          className="flex items-center p-2 font-bold hover:bg-gray-100 rounded text-gray-700"
+        >
           <Image
             src="/svg/signout-logo.svg"
             alt="Sign Out Logo"
