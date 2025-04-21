@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth } from "../../firebaseconfig";
 
-
 export default function Login() {
   const router = useRouter();
   const [email, setEmail] = useState("");
@@ -13,14 +12,12 @@ export default function Login() {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  // Sign in dengan email dan password
   const handleSignIn = async () => {
     setIsLoading(true);
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
 
-      // Verifikasi email
       if (!user.emailVerified) {
         setError("Please verify your email address.");
         return;
@@ -34,7 +31,6 @@ export default function Login() {
     }
   };
 
-  // Sign in dengan Google
   const handleGoogleSignIn = async () => {
     setIsLoading(true);
     const provider = new GoogleAuthProvider();
@@ -48,7 +44,6 @@ export default function Login() {
     }
   };
 
-  // Kembali ke halaman utama
   const handleBack = () => {
     router.push("/");
   };

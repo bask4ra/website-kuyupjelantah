@@ -79,7 +79,6 @@ export default function SidePanel() {
           />
           Royalty Reward
         </a>
-
         {/* History */}
         <a
           href="/history"
