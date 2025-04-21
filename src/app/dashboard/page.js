@@ -24,24 +24,58 @@ export default function Dashboard() {
         </header>
 
         {/* Loyalty Reward Banner */}
-        <div className="mb-6">
+        <div className="relative mb-6">
           <Image
             src="/svg/dashboard-banner.svg"
             alt="Dashboard Banner"
             width={1200}
             height={319}
+            className="rounded-lg"  
           />
+          {/* Teks di atas banner */}
+          <div className="absolute inset-0 flex flex-col justify-center px-10 text-white">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-2xl font-extrabold text-[#F9D876]">Loyalty Reward ✨</h2>
+              <div>
+              </div>
+            </div>
+            <p className="text-sm">Current Oil Volume</p>
+            <h1 className="text-4xl font-extrabold text-[#F9D876] mt-2">18 Liter</h1>
+            <p className="text-sm mt-2">
+              Reach <span className="font-bold">50 Liter</span> for Next Milestone
+            </p>
+            <a
+              href="#"
+              className="mt-4 text-sm underline text-blue-300 hover:text-blue-400"
+            >
+              See Reward
+            </a>
+            <p className="absolute bottom-4 right-11 text-sm text-gray-300">
+              Expiry 12/24
+            </p>
+          </div>
         </div>
 
-        {/* Replacing Yellow Box with Image */}
-        <div className="mb-6">
-          <Image
-            src="/svg/dashboard-second-banner.svg"
-            alt="Second Dashboard Banner"
-            width={1200}
-            height={178}
-          />
-        </div>
+{/* Replacing Yellow Box with Image */}
+<div className="relative mb-6">
+  <Image
+    src="/svg/dashboard-second-banner.svg"
+    alt="Second Dashboard Banner"
+    width={1200}
+    height={178}
+    className="rounded-lg"
+  />
+  <div className="absolute inset-0 flex items-center justify-start pl-6 pr-6">
+    <h2 className="text-3xl font-bold text-white leading-tight mr-40">
+      Have Used Cooking Oil<br />Right Now?
+    </h2>
+    <button className="px-4 py-2 ml-4 bg-[#3D2F3A] text-white rounded-2xl">
+      Schedule Now
+    </button>
+  </div>
+</div>
+
+
 
         {/* Overview History */}
         <div className="p-6 w-full"> {/* Adjust width to match the banner above */}
@@ -86,6 +120,6 @@ export default function Dashboard() {
           </table>
         </div>
       </main>
-    </div>
-  );
+    </div>
+  );
 }
